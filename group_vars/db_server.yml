@@ -1,5 +1,6 @@
 ---
 
+db_hostname: "{{ hostvars[groups['db_server'][0]]['inventory_hostname'] }}"
 mysql_datadir: /var/lib/mysql
 mysql_socket: /var/lib/mysql/mysql.sock
 mysql_port: 3306
